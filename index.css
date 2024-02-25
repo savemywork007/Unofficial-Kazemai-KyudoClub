@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "IBM Plex Sans", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container {
+    margin: auto;
+    max-width: 1024px;
+}
+
+nav {
+    .nav-list {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 60px;
+    }
+
+    .nav-item-link {
+        a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #4BBAFA;
+            transition: ease-out 0.8s;
+        }
+
+        a:hover {
+            color: #85E938;
+        }
+    }
+}
+
+.main-content {
+
+
+    .h1-welcome {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .img-welcome {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .img-welcome img {
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    .Data-about-us {
+        text-align: left;
+        padding: 10px
+    }
+
+    .main-img {
+        width: 150px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .main-img img {
+        width: 100%;
+        border-radius: 100%;
+    }
+
+    .Staff {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .Student h1 {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .Student {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Datas-S {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Ryo-name {
+        width: fit-content;
+    }
+}
+
+footer {
+
+    .footer-content {
+        width: 100%;
+        height: 60px;
+        margin-top: 20px;
+        
+        a {
+            
+            text-decoration: none;
+            color: #4BBAFA;
+            transition: ease-out 0.8s;
+        }
+
+        a:hover {
+            color: #85E938;
+        }
+    }
+}
+
+
+@media screen and (width < 1035px) {
+
+    .container {
+        max-width: 768px
+    }
+
+}
+
+@media screen and (width < 786px) {
+
+    .container {
+        max-width: 568px
+    }
+
+}
+
+@media screen and (width < 586px) {
+
+    .container {
+        max-width: 468px
+    }
+
+    .main-content {
+
+        .main-img {
+            width: 250px;
+        }
+
+        .Datas-S {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .Ryo-name {
+            text-align: center;
+        }
+    }
+
+
+}
+
+@media screen and (width < 498px) {
+
+    .container {
+        max-width: 350px;
+    }
+
+
+
+}
+
+@media screen and (width < 368px) {
+
+    .container {
+        max-width: 300px;
+    }
+
+    nav {
+        width: 100%;
+
+        .nav-list {
+            justify-content: center;
+            align-items: center;
+            margin-top: 5dvh;
+            margin-bottom: 5dvh;
+        }
+
+        .nav-item-link {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .nav-item-link a {
+            font-size: medium;
+            margin: 5px;
+        }
+    }
+
+}
+
+@media screen and (width < 300px) {}
